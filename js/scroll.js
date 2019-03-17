@@ -5,19 +5,19 @@ $(document).on("scroll", function () {
   
   $("div.progress div.bar").html(pixels + " pixels down")
     
-  if (pixels < 125) {
+  if (pixels < 1200) {
     $("header").removeClass("hide")
   } else {
     $("header").addClass("hide")
   }
   
-  if (pixels < 600) {
+  if (pixels < 1600) {
     $("body").css("background-color", "#ffffff")
-  } else if (pixels < 1400) {
-    $("body").css("background-color", "#a29c97")
   } else if (pixels < 2200) {
-    $("body").css("background-color", "#d9dfe4")
+    $("body").css("background-color", "#a29c97")
   } else if (pixels < 3000) {
+    $("body").css("background-color", "#d9dfe4")
+  } else if (pixels < 3800) {
     $("body").css("background-color", "#fff0f0")
   } else {
     $("body").css("background-color", "#cdccc7")
