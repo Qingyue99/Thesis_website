@@ -11,13 +11,13 @@ $(document).on("scroll", function () {
     $("header").addClass("hide")
   }
   
-  if (pixels < 1600) {
+  if (pixels < 2900) {
     $("body").css("background-color", "#ffffff")
-  } else if (pixels < 2200) {
+  } else if (pixels < 3200) {
     $("body").css("background-color", "#a29c97")
-  } else if (pixels < 3000) {
-    $("body").css("background-color", "#d9dfe4")
   } else if (pixels < 3800) {
+    $("body").css("background-color", "#d9dfe4")
+  } else if (pixels < 4600) {
     $("body").css("background-color", "#fff0f0")
   } else {
     $("body").css("background-color", "#cdccc7")
