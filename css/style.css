@@ -23,7 +23,7 @@ header{
     transform: translateX(0);
 }
 
-
+/* 
 header nav{
     float:right;
     margin-top:20px;
@@ -34,7 +34,7 @@ header nav a{
     font-size:14px;
     font-weight:700;
     margin-left: 10px;
-} 
+}  */
 
 header {
     overflow:hidden;
@@ -62,7 +62,7 @@ header {
     font-weight:700;
 }
 
-.introducation .explain{
+.explain{
     position: absolute;
     right:0;
     top: 50%;
@@ -84,7 +84,7 @@ section.theory .explain {
     left:0;
   }
 
-.theory h3 {
+.explain h3 {
     font-size:25px;
     font-weight: 700;
     margin: 0 0 10px 0;
@@ -145,16 +145,28 @@ section {
 
 
 
-.basemap .sectiontitle{
+.sectiontitle{
     font-size: 40px;
     line-height:1.2;
     font-weight:700;
 
-    position: absolute;
+    position: center;
     right:0;
     top: 60%;
     width: 280px;
     transform: translateY(-50%);
+    
+}
+
+.sectionsmalltitle{
+    font-size: 20px;
+    line-height:1.2;
+    font-weight:700;
+
+    position: center;
+    right:0;
+    top: 60%;
+
     
 }
 
@@ -228,20 +240,52 @@ section {
   
   a {
     color: #000000;
-    padding: 20px 30px;
-    position: absolute;
-    bottom: 0;
-    text-decoration: none;
-    z-index: 1;
+    /* padding: 20px 30px; */
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* text-decoration: none; */
+    /* z-index: 1; */
   }
   
-  .prev {
-    left: 0;
-  }
+ 
+  .table-cell{
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.content {
+    position:absolute;
+    height:90%; /* = 100% - 2*5% padding */
+    width:90%; /* = 100% - 2*5% padding */
+    padding: 5%;
+    
+}
+.table{
+    display:table;
+    width:100%;
+    height:100%;
+}
   
-  .next {
-    right: 0;
-  }
-  
-  
+.rectangle {
+    float:left;
+    position: relative;
+    width: 90%;
+    height: 280px;
+    padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    background-color:#C8DEDF;
+    overflow:hidden;
+}
+
+.rectangle2 {
+    float:left;
+    position: relative;
+    width: 90%;
+    height: 280px;
+    padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    background-color:#5A82A0;
+    overflow:hidden;
+}
+
  
