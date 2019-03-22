@@ -18,16 +18,8 @@
 </head>
 
 <body>
-    <header>
-            <!-- <img src= "assets/logo.svg"> -->
-            <!-- <nav>
-                <a class="button stroke smoothscroll" href="#Introduction" title="">Introduction</a>
-                <a href="#Bigpictures" class="selected">Big pictures</a>
-                <a>Density maps</a>
-                <a>User Scenario/Insights</a>
-            </nav> -->
 
-
+<header>            
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="d-flex flex-grow-1">
         <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
@@ -68,8 +60,6 @@
                 </div>
             </div>
         </section>
-
-
 
     </div>
 
@@ -115,10 +105,21 @@
    <!-- Case Study -->
    <div class="container">
   <div class="row">
+        <div class="col-md-12">
         <div class="sectionsmalltitle">
-                <h2>Boston as Case Stduy </h2>
+                <h2 class="text-center">Boston as Case Stduy</h2>
             </div>
+        </div>
+
 </div>
+
+<div class="row">
+        <div class="col-md-12">
+<div id="floating-panel"><input type="button" value="Auto Rotate" onclick="autoRotate();"></div>
+        <div id="map"></div>
+    </div>
+</div>
+
 <div class="row">
         <div class="col-md-12">
            <img src="assets/storiesincity-01.png">
@@ -207,21 +208,25 @@
 
     <!--part 2:Bigpictures -->
      <!-- city scale-->
-
+     <div class="myclass">
     <div class="row">
             <div class="sectionsmalltitle">
                     <h2>How Many Food-related Amenities We Access To?</h2>
                 </div>
     </div>
+     </div>
+    <div class="myclass">
     <div class="row">
      <div class="col-md-12">
         <img src="assets/Bigpictures1-01.png">
         
     </div>
     </div>
+    </div>
+
 
  <!-- zoom in -->
-
+<div class="myclass">
     <div class="row">
             <div class="sectionsmalltitle">
                     <h2>In the deighborhoods participants spend most of their daytime hours, how many <mark>  eating places</mark> they can access to?</h2>
@@ -234,8 +239,9 @@
     </div>
     </div>
 
+    
+</div>
     <!-- zoom in to 3 neighboohods people lives-->
-
     <div class="row">
             <div class="sectionsmalltitle">
                     <h2>In the deighborhoods participants spend most of their daytime hours, how many <mark> food shops</mark> 
@@ -280,12 +286,9 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
-
-
-
-
-            
+        
     
+    </div>
     </div>
     <!-- </section> -->
 
@@ -323,10 +326,9 @@
     <!-- <script src="js/slideshow.js"></script> -->
     <!-- <script src="js/scroll.js"></script> -->
     <script src="js/main.js"></script>
-
-
-
-
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpxHTaW6FEXIreK-E3oN4fZrBBOTg2wQw&callback=initMap">
+    </script>
 
 </body>
 
