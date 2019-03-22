@@ -1,24 +1,350 @@
-var map;
+// var map;
+// function initMap() {
+
+
+//     var myLatLng = {lat: 42.3500, lng: -71.061}};
+
+//         var map = new google.maps.Map(document.getElementById('map'), {
+//           zoom: 12,
+//           center: myLatLng
+//           mapTypeId: 'satellite'
+//     });
+
+//       var marker = new google.maps.Marker({
+//         position: myLatLng,
+//         map: map,
+//         title: 'Hello World!'
+//       });
+//     }
+
+//     map.setTilt(45);
+ 
+
 function initMap() {
+    var myLatLng = {lat: 42.3500, lng: -71.061};
+
+    //Initializing the map  
     var map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 42.335, lng: -71.015},
       zoom: 12,
-      mapTypeId: 'satellite'
+      center: myLatLng,
+      styles: [
+        {"elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#f5f5f5"
+            }
+          ]
+        },
+        {
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#d59563"
+            }
+          ]
+        },
+        {
+          "elementType": "labels.text.stroke",
+          "stylers": [
+            {
+              "color": "#f5f5f5"
+            }
+          ]
+        },
+        {
+          "featureType": "administrative.land_parcel",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "administrative.land_parcel",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#bdbdbd"
+            }
+          ]
+        },
+        {
+          "featureType": "administrative.neighborhood",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#eeeeee"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "labels.text",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#757575"
+            }
+          ]
+        },
+        {
+          "featureType": "poi.business",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "poi.park",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#e5e5e5"
+            }
+          ]
+        },
+        {
+          "featureType": "poi.park",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#9e9e9e"
+            }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "labels",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "on"
+            }
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "labels",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#757575"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#dadada"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "labels",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#616161"
+            }
+          ]
+        },
+        {
+          "featureType": "road.local",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "road.local",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#9e9e9e"
+            }
+          ]
+        },
+        {
+          "featureType": "transit",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "transit.line",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#e5e5e5"
+            }
+          ]
+        },
+        {
+          "featureType": "transit.station",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#eeeeee"
+            }
+          ]
+        },
+        {
+          "featureType": "water",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#c9c9c9"
+            }
+          ]
+        },
+        {
+          "featureType": "water",
+          "elementType": "labels.text",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "water",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#9e9e9e"
+            }
+          ]
+        }
+      ]
     });
-    map.setTilt(45);
-  }
-
-function rotate90() {
-  var heading = map.getHeading() || 0;
-  map.setHeading(heading + 90);
+    setMarkers(map);
 }
 
-function autoRotate() {
-  // Determine if we're showing aerial imagery.
-  if (map.getTilt() !== 0) {
-    window.setInterval(rotate90, 3000);
+      //Multiple Markers
+    var beaches = [
+        ['Back Bay', 42.349877, -71.078067,3],
+        ['Allston', 42.351144, -71.131478,4],
+        ['NEU', 42.341057, -71.087680,5],  
+      ];
+
+// //Info Contents
+// var infoContent = [
+//     ["Back Bay", "Technology Guest House, Indian Institute of Technology Kharagpur, India"],
+//     ["Allston", "Technology Guest House, Indian Institute of Technology Kharagpur, India"],
+//     ["NEU", "Technology Guest House, Indian Institute of Technology Kharagpur, India"],
+   
+// ];
+
+
+function setMarkers(map) {
+    // Adds markers to the map.
+  
+    // Marker sizes are expressed as a Size of X,Y where the origin of the image
+    // (0,0) is located in the top left of the image.
+  
+    // Origins, anchor positions and coordinates of the marker increase in the X
+    // direction to the right and in the Y direction down.
+    var image = {
+      url: 'assets/Bigpictures2-01.png',
+      // This marker is 120 pixels wide by 90 pixels high.
+      size: new google.maps.Size(120, 92),
+      // The origin for this image is (0, 0).
+      origin: new google.maps.Point(40, 0),
+      // The anchor for this image is the base of the flagpole at (0, 32).
+      anchor: new google.maps.Point(0, 32)
+    };
+    // Shapes define the clickable region of the icon. The type defines an HTML
+    // <area> element 'poly' which traces out a polygon as a series of X,Y points.
+    // The final coordinate closes the poly by connecting to the first coordinate.
+    var shape = {
+      coords: [1, 1, 1, 20, 18, 20, 18, 1],
+      type: 'poly'
+    };
+    for (var i = 0; i < beaches.length; i++) {
+      var beach = beaches[i];
+      var marker = new google.maps.Marker({
+        position: {lat: beach[1], lng: beach[2]},
+        map: map,
+        icon: image,
+        shape: shape,
+        title: beach[0],
+        zIndex: beach[3]
+      });
+    }
   }
-}
+
+//Override zoom level of the map
+var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
+ this.setZoom(15);
+ google.maps.event.removeListener(boundsListener);
+});
+
+
+
 
 
 $('.menu-toggle').on('click', function(){

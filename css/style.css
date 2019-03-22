@@ -298,8 +298,6 @@ section {
       /* Optional: Makes the sample page fill the window. */
       html, body {
         height: 100%;
-        margin: 0;
-        padding: 0;
       }
       #floating-panel {
         position: absolute;
@@ -318,4 +316,9 @@ section {
 
 
       .myclass > div {    margin-top: 30px;
+      }
+
+
+      .smallimage {
+     margin: 25px;
       }
