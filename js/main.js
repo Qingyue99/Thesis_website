@@ -257,7 +257,7 @@ function initMap() {
           "elementType": "geometry",
           "stylers": [
             {
-              "color": "#c9c9c9"
+              "color": "#c8d7d4"
             }
           ]
         },
@@ -309,9 +309,9 @@ function setMarkers(map) {
     // Origins, anchor positions and coordinates of the marker increase in the X
     // direction to the right and in the Y direction down.
     var image = {
-      url: 'assets/Bigpictures2-01.png',
+      url: 'assets/image_3.jpg',
       // This marker is 120 pixels wide by 90 pixels high.
-      size: new google.maps.Size(120, 92),
+      size: new google.maps.Size(500, 400),
       // The origin for this image is (0, 0).
       origin: new google.maps.Point(40, 0),
       // The anchor for this image is the base of the flagpole at (0, 32).
@@ -338,10 +338,7 @@ function setMarkers(map) {
   }
 
 //Override zoom level of the map
-var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
- this.setZoom(15);
- google.maps.event.removeListener(boundsListener);
-});
+
 
 
 
