@@ -64,9 +64,10 @@ header {
 
 .explain{
     position: absolute;
+    font-size: 60px;
     right:0;
     top: 50%;
-    width: 310px;
+    width: 290px;
     transform: translateY(-50%);
 }
 
