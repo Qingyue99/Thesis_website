@@ -398,4 +398,26 @@ section {
     .container { 
         padding: 0px;
       }
+
+    .section-space--inner-bottom {
+        padding-bottom: 80px !important;
+    }
    
+    .feature-logo-wrapper {
+        padding-bottom: 10px !important;
+    }
+
+
+    .single-feature-logo__content .title {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 15px;
+        margin-bottom: 24px;
+        color: #292929;
+    }
+    
+    .single-feature-logo__content .short-desc {
+        font-weight: 400;
+        line-height: 19px;
+        color: #929292;
+    }
