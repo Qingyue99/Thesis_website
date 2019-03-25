@@ -4,13 +4,18 @@ body{
     line-height:1.2;
     color: #000000;
 
-    max-width:960px;
+    /* max-width:960px; */
     padding-left:20px;
     padding-right:20px;
     margin-left: auto;
     margin-right: auto;
 
     padding-top:104px;
+
+}
+
+.fullwidth{
+    max-width:100%;
 
 }
 
@@ -63,12 +68,13 @@ header {
 }
 
 .explain{
-    position: absolute;
+    /* position: absolute; */
     font-size: 60px;
     right:0;
     top: 50%;
-    width: 290px;
-    transform: translateY(-50%);
+    
+    /* width: 290px; */
+    /* transform: translateY(-50%); */
 }
 
 
@@ -243,17 +249,8 @@ section {
     overflow: hidden;
     text-align: center;
   }
-  
-  a {
-    color: #000000;
-    /* padding: 20px 30px; */
-    /* position: absolute; */
-    /* bottom: 0; */
-    /* text-decoration: none; */
-    /* z-index: 1; */
-  }
-  
- 
+
+
   .table-cell{
     display:table-cell;
     vertical-align:middle;
@@ -376,7 +373,7 @@ section {
 
 
     .smallimage {
-     /* margin: 60px; */
+     padding: 20px;
      position: relative;
     
       }
@@ -398,6 +395,7 @@ section {
 
     .container { 
         padding: 0px;
+       margin-bottom: 15px;
       }
 
     .section-space--inner-bottom {
@@ -418,6 +416,19 @@ section {
     }
     
     .single-feature-logo__content .short-desc {
+        font-weight: 400;
+        line-height: 19px;
+        color: #929292;
+    }
+
+    
+    .short-descfinding{
+        font-weight: 600;
+        line-height: 19px;
+        color: #d3504a;
+    }
+
+    .small-desc{
         font-weight: 400;
         line-height: 19px;
         color: #929292;
@@ -489,3 +500,273 @@ section {
 	margin-right: -15px !important;
 	margin-left: -15px !important;
 }
+
+.testimonial-bg {
+	background-image: url('../img/backgrounds/bkg_testimonials.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.full-testimonial-wrapper .testimonial-wrapper .slick-arrow {
+	font-size: 36px;
+	position: absolute;
+	z-index: 9;
+	top: 50%;
+	visibility: hidden;
+	-webkit-transition: .3s;
+	transition: .3s;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	opacity: 0;
+	border: none;
+	background: none;
+}
+
+.short-desc {
+    font-weight: 400;
+	font-size: 22px;
+    line-height: 34px;
+    /* margin-bottom: 1rem; */
+}
+
+#wrapper
+{
+    background: url('../assets/foodnearmeconcept.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#overlay-1
+{
+    background-color: rgba(40, 40, 40, 0.6);
+    position: relative;
+}
+
+
+
+
+.form-control:focus {
+border-color: #3acab1;
+box-shadow: none;
+}
+
+
+.starting-text
+{
+    padding: 177px 0px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+    letter-spacing: 2px;
+}
+
+
+#overlay-1
+{
+    background-color: rgba(40, 40, 40, 0.6);
+    position: relative;
+}
+
+
+button.navbar-toggle .ion-navicon {
+    font-size: 2em;
+    color: #fff;
+}
+
+
+.row-fluid 
+{
+    overflow: hidden;
+    padding: 25px 0px;
+    width: 100%;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------
+                                navbar
+-------------------------------------------------------------------------------------------------------*/
+#navigation, .navbar-default
+{
+    border-radius: 0px;
+    border: 0;
+    background-color: rgba(0,0,0,0.19);
+}
+.navbar-default .navbar-nav>li>a {
+    font-size: 16px;
+    transition: all 0.5s cubic-bezier(.17,.67,.83,.67);
+    color: #E5E5E5;
+    margin: 5px 20px;
+    padding: 0;
+    line-height: 28px;
+    font-family: "Coda";
+    text-transform: capitalize;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus
+{
+    color: #fff;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+    font-family: "Coda";  
+    padding: 5px 15px;  
+    font-size: 26px;  
+    line-height: 100%;  
+    height: auto;
+}
+
+.nav-wrap 
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+#wrapper
+{
+    background: url(../assets/);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#overlay-1
+{
+    background-color: rgba(40, 40, 40, 0.6);
+    position: relative;
+}
+
+.starting-text
+{
+    padding: 177px 0px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+    letter-spacing: 2px;
+}
+.rene {
+    font-size: 120px;
+    color: white;
+    font-family: "omnes-pro", "Helvetica", sans-serif;
+    font-weight: 300;
+    margin-top: 75px;
+}
+
+.starting-text h2 {
+    font-family: "omnes-pro", "Helvetica", sans-serif;
+    color: #fff;
+}
+
+.bottom 
+{
+    width: 100%;
+    position: absolute;
+    bottom: 2%;
+}
+.bottom a
+{
+    color: rgba(192, 192, 192, 0.5);
+}
+h5 
+{
+    padding-top: 22px;
+    font-size: 18px;
+}
+
+.btn {
+    border-radius: 0;
+    transition: background 0.5s cubic-bezier(.17,.67,.83,.67);
+}
+
+.navbar-white {
+    background-color: #fff !important;
+    transition: background 0.5s ease-out;
+
+}
+
+.navbar-white li a {
+    color: #16a085 !important;
+}
+
+.navbar-white .navbar-brand {
+    color: #16a085 !important;
+}
+
+.navbar-white button.navbar-toggle {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.navbar-white button.navbar-toggle .ion-navicon {
+    color: #000;
+}
+
+.form-control:focus {
+border-color: #3acab1;
+box-shadow: none;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: rgba(221, 221, 221, 0);
+    margin: 0;
+    line-height: 100%;
+}
+
+.navbar-toggle {
+    padding: 0;
+    border-radius: 0;
+}
+
+.navbar {
+    margin-bottom: 0px;
+    padding: 10px 5px;
+    min-height: 0;}
+
+button.navbar-toggle .ion-navicon {
+        font-size: 2em;
+        color: #fff;
+    }
+
+    ul li
+    {
+        list-style: none;
+        display: inline-block;
+    }
+    li a
+    {
+        text-decoration: none;
+    }
+    #heading-text 
+    {
+        padding-top: 10px;
+    }
+    #heading-text h3 {
+        font-size: 49px;
+        font-family: 'Roboto', sans-serif;
+        padding-top: 58px;
+        text-transform: uppercase;
+    }
+    
+    #heading-text p {
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        padding: 5px 0px
+    }
+    
+
+    .vertical{
+        margin-top:50%;
+        }
+
+    .img-fluid{
+        padding-left:30%; 
+
+    }
