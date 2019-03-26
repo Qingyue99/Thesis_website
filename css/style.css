@@ -851,3 +851,9 @@ button.navbar-toggle .ion-navicon {
         text-transform: uppercase;
         letter-spacing: .25rem;
     }
+
+    h2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
