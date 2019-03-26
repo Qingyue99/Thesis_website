@@ -433,6 +433,13 @@ section {
         color: #d3504a;
     }
 
+    .short-descfindingblack{
+        font-weight: 600;
+        line-height: 19px;
+        color: black;
+    }
+
+
     .small-desc{
         font-weight: 400;
         line-height: 19px;
