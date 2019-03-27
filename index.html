@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- js -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
@@ -19,7 +21,7 @@
 <body>
 
 <header>            
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="d-flex flex-grow-1">
         <span class="w-100 d-lg-none d-block">hidden spacer to center brand on mobile</span>
         <a class="navbar-brand" href="#">
@@ -29,30 +31,35 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
-    </div>
+    </div> -->
 
-    <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
-        <ul class="navbar-nav ml-auto flex-nowrap">
+    <!-- <div class="min-vh-100 container pt4 pb5 flex flex-column justify-between mb5-ns"> -->
+            <header class="header-desktop"></header>
+            <header class="header">
+              <nav class="nav">
+                <ul class="nav-list flex flex-wrap justify-center bold">
+                  <li class="flex justify-center mb3 mb4-ns logo-container">
+                    <a href="index.html">
+           </a>
+        </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Introduction</a>
+                <a class="nav-link" href="#Introduction">Introduction</a>
             </li>
             <li class="nav-item">
-                <a href="#picture" class="nav-link">Bigpictures</a>
+                <a class="nav-link" href="#Bigpicture">Bigpictures</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Density maps</a>
+                <a class="nav-link" href="#Density">Density maps</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">User Scenario/Insights</a>
+                <a class="nav-link" href="#Insights">User Scenario/Insights</a>
             </li>
         </ul>
-    </div>
 </nav>
     </header> 
 
-
+</header>  
 <section id="intro">
-
 <div class="intro-overlay"></div>
 
 <div class="intro-content">
@@ -68,31 +75,9 @@
         </div>
         </div>
     </div>
-</div> <!-- /intro-content -->
-</section> <!-- /intro -->
+</div> 
+</section> 
 
-<!-- ——————————————————————Explore Data—————————————————————————— -->
-                    <div id="bottom" class="bottom text-center">
-                        <a href="#about"><i class="ion-ios7-arrow-down"></i></a>
-                    </div>
-                </div>
-            </div>
-
-  
-
-      
-
-    <!-- <div class="container">  
-              <div class="row">
-                    <div class="col-md-8">
-                    <img class="img-responsive" src="assets/food nearme concept.jpg">
-                    </div>
-
-                    <div class="col-md-4">
-                            <h1 class="explain">Lifestyle Geography Of Food Environment in Boston </h2>
-                        </div>
-                    </div>
-            </div> -->
 
 
 
@@ -100,7 +85,7 @@
 
     <!-- section2 -->
     <div class="container">
-    <div class="row">
+    <div class="row" id="Introduction">
         <div class="col-md-2">
         </div>
                 <div class="col-md-8">
@@ -262,6 +247,7 @@
 
 </div>
 </div>
+
 
 
 <br>
@@ -669,16 +655,32 @@
             </div>
 
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-lg-2">
             </div>
-            <div class="col-md-10">
-                    <h2>The top three locations/platforms seem like you get most of your food from are….</h2>
+            <div class="col-lg-10">
+                    <h2>The top three locations/platforms seem like you get most of your food from are</h2>
+                    <br>
+                    <h2>Supermarket>Casual Sit Down Restaurant>Fast food restaurant </h2>
+                    <img src="assets/equation_single.png" class="img-small" alt="">
+
                  </div>
-                  </div>
-
         </div>
 
-        </div>
+        <div class="myclass">
+                <div class="row">
+                    <div class="col-md-12">
+                <img class="img-responsive" src="assets/Bigpictures1-01.png">
+                
+                    </div>
+                </div>
+            </div>
+       
+
+
+
+
+    </div>
+
 
         <!-- <div class="explain">
             <h2>How People Actually Eat In Greater Boston</h2>
