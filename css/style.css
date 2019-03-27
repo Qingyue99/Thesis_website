@@ -10,7 +10,7 @@ body{
     margin-left: auto;
     margin-right: auto;
 
-    padding-top:104px;
+    padding-top:60px;
 
 }
 
@@ -50,6 +50,7 @@ header {
     z-index:3;
     width:100%;
     padding:10px;
+    background-color:#FFFFFF;
 }
 
 .selected {
@@ -435,11 +436,12 @@ section {
     }
 
     .short-descfindingblack{
-        font-weight: 600;
+        font-weight: 500;
         line-height: 19px;
-        color: black;
+        color:#414141;
         margin-bottom: 10px;
         margin-top: 10px;
+        font-size: 20px;
     }
 
 
@@ -798,6 +800,7 @@ button.navbar-toggle .ion-navicon {
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
+        background-position: 0px 0px;
         /*background-attachment: fixed;*/
         width: 100%;
         height: 100%;
