@@ -6,7 +6,7 @@ var map = L.map('map',{
   zoomSnap: 0.2
 }).setView([42.3500, -71.061], 12);
 
-var OpenMapSurfer_Grayscale  = L.tileLayer('https://korona.geog.uni-heidelberg.de/tiles/roadsg/x={x}&y={y}&z={z}', {
+var OpenMapSurfer_Grayscale  = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
   maxZoom: 19,
   attribution: '&copy; <a href="http://giscience.uni-hd.de/">OpenStreetMap</a>'
 }).addTo(map);
@@ -16,6 +16,7 @@ var myStyle = {
   "weight": 5,
   "opacity": 0.65
 };
+
 
 var mymap = L.map('map').setView([51.505, -0.09], 13);
 
