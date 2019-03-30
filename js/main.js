@@ -17,6 +17,7 @@ var myStyle = {
   "opacity": 0.65
 };
 
+var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
 // var PlaygroundIcon = L.icon({
 //   iconUrl: "images/playground_new.png",
