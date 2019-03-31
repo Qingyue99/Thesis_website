@@ -74,6 +74,7 @@ header {
     font-size: 60px;
     right:0;
     top: 50%;
+    font-family: Futura;
     
     /* width: 290px; */
     /* transform: translateY(-50%); */
@@ -890,3 +891,9 @@ button.navbar-toggle .ion-navicon {
         width: 80px;
         height: 80px;
       }
+
+    .custom .leaflet-popup-tip,
+    .custom .leaflet-popup-content-wrapper {
+    background: #FFFFFF;
+    color: #414141;
+}

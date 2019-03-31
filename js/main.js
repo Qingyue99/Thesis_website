@@ -4,7 +4,7 @@
 var map = L.map('map',{
   scrollWheelZoom: false,
   zoomSnap: 0.2
-}).setView([42.3500, -71.061], 12);
+}).setView([42.3500, -71.061], 13);
 
 var OpenMapSurfer_Grayscale  = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
   maxZoom: 19,
@@ -17,8 +17,32 @@ var myStyle = {
   "opacity": 0.65
 };
 
+ // create custom icon
+ var foodIcon = L.icon({
+  iconUrl: "assets/icons/foodinpublic.svg",
+  iconSize: [25, 45], // size of the icon
+  popupAnchor: [0,-15],
+  shadowAnchor: [4, 62],  // the same for the shadow
+  });
 
-var mymap = L.map('map').setView([51.505, -0.09], 13);
+  // create popup contents
+  var customPopup1 = "Back Bay<br/><img src='http://joshuafrazier.info/images/maptime.gif' alt='maptime logo gif' width='1200px'/>";
+  
+  var customPopup2 = "Allston<br/><img src='http://joshuafrazier.info/images/maptime.gif' alt='maptime logo gif' width='1200px'/>";
+  // specify popup options 
+  var customOptions =
+      {
+      'maxWidth': '4000',
+      'className' : 'custom'
+      }
+  
+  // create marker object, pass custom icon as option, pass content and options to popup, add to map
+  L.marker([42.349877, -71.078067], {icon: foodIcon}).bindPopup(customPopup1,customOptions).addTo(map);
+  L.marker([42.351144, -71.131478], {icon: foodIcon}).bindPopup(customPopup2,customOptions).addTo(map);
+  L.marker([42.341057, -71.087680], {icon: foodIcon}).addTo(map).bindPopup("NEU");
+
+
+
 
 // var PlaygroundIcon = L.icon({
 //   iconUrl: "images/playground_new.png",
